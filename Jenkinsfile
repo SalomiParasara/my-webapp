@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/SalomiParasara/my-webapp.git'
+                    url: 'https://github.com/SalomiParasara/my-webapp.git',
                     credentialsId: 'GITHUB_TOKEN'
             }
         }
