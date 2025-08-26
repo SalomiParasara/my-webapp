@@ -6,9 +6,10 @@ pipeline {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/SalomiParasara/my-webapp.git'
-                    credentialsId: 'GITHUB_SALOMI'
+                    credentialsId: 'GITHUB_TOKEN'
             }
         }
+    
 
         stage('Install Dependencies') {
             steps {
